@@ -1,7 +1,7 @@
 package com.example.first_swing_app.controllers;
 
 import com.example.first_swing_app.models.Location;
-import com.example.first_swing_app.security.service.LocationService;
+import com.example.first_swing_app.services.LocationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

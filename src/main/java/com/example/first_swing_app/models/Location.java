@@ -3,7 +3,6 @@ package com.example.first_swing_app.models;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Getter
 @Setter
@@ -11,11 +10,12 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "LOCATION")
+@Table(name = "LOCATIONS")
 public class Location {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "location_id")
     private Long id;
 
     private String name;

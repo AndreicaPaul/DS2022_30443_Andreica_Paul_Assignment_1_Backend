@@ -1,7 +1,9 @@
-package com.example.first_swing_app.security.service;
+package com.example.first_swing_app.services;
 
 import com.example.first_swing_app.models.Location;
+import com.example.first_swing_app.models.MeteringDevice;
 import com.example.first_swing_app.repositories.LocationRepository;
+import com.example.first_swing_app.repositories.MeteringDeviceRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -18,4 +20,6 @@ public class LocationService {
     public List<Location> getAll() {
         return locationRepository.findAll();
     }
+
+    public Location getLocationForId(Long locationId){return locationRepository.getById(locationId);}
 }

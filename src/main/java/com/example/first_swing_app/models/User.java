@@ -15,6 +15,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private Long id;
 
     private String username;
@@ -26,4 +27,8 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserRole userRole;
 
+    @Override
+    public String toString() {
+        return this.id + " ; " + this.username + " ; " +this.email;
+    }
 }
