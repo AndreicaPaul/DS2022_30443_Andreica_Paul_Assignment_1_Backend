@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  postgres_db:
+    image: postgres_db
+    ports:
+      - "5433:5432"
+
+  tomcat-db-api:
+    image: energy_backend_image
+    ports:
+       - "8080:8080"
+    depends_on:
+      - postgres_db
+    links:
+      - postgres_db
