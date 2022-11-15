@@ -16,7 +16,7 @@ public class UpdateDeviceDto {
 
     private float maximumHourlyConsumption;
 
-    private Long userId;
+    private Long user;
 
-    private Long locationId;
+    private Long location;
 }

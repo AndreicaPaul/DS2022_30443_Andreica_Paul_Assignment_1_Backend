@@ -83,8 +83,14 @@ public class AdminController {
 
     @PostMapping("/device/{deviceId}")
     public ResponseEntity<MeteringDevice> updateDevice(@PathVariable Long deviceId, @RequestBody UpdateDeviceDto updateDeviceRequest) {
-        Location location = locationService.getLocationForId(updateDeviceRequest.getLocationId());
-        User user = userService.findById(updateDeviceRequest.getUserId());
+        Location location = null;
+        User user = null;
+        if(updateDeviceRequest.getLocation() != null) {
+            location = locationService.getLocationForId(updateDeviceRequest.getLocation());
+        }
+        if(updateDeviceRequest.getUser() != null) {
+            user = userService.findById(updateDeviceRequest.getUser());
+        }
         MeteringDevice meteringDevice = new MeteringDevice(deviceId, updateDeviceRequest.getName(), updateDeviceRequest.getDescription(), location, updateDeviceRequest.getMaximumHourlyConsumption(), user);
         return ResponseEntity.ok(this.meteringDeviceService.saveMeteringDevice(meteringDevice));
     }
