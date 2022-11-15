@@ -1,8 +1,10 @@
 package com.example.first_swing_app.controllers;
 
+import com.example.first_swing_app.models.MeteringDevice;
 import com.example.first_swing_app.models.User;
 import com.example.first_swing_app.security.jwt.JwtTokenManager;
 import com.example.first_swing_app.security.service.UserService;
+import com.example.first_swing_app.services.MeteringDeviceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @CrossOrigin
@@ -19,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     private final UserService userService;
+    private final MeteringDeviceService meteringDeviceService;
 
     private final JwtTokenManager jwtTokenManager;
 
@@ -40,5 +45,10 @@ public class UserController {
         message.setText("Test email from Utility Platform");
         emailSender.send(message);
         return "Email sent!";
+    }
+
+    @GetMapping("/{userId}/devices")
+    public ResponseEntity<List<MeteringDevice>> getUserDevices(@PathVariable Long userId) {
+        return ResponseEntity.ok(meteringDeviceService.getAllForUser(userId));
     }
 }

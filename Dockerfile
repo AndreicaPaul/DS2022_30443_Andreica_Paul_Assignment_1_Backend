@@ -2,7 +2,6 @@ FROM maven:3.6.3-jdk-11 AS builder
 
 COPY ./src/ /root/src
 COPY ./pom.xml /root/
-COPY ./checkstyle.xml /root/
 WORKDIR /root
 RUN mvn package
 RUN java -Djarmode=layertools -jar /root/target/ds-2020-0.0.1-SNAPSHOT.jar list

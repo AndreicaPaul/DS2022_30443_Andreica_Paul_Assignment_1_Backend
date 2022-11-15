@@ -21,5 +21,5 @@ public class LocationService {
         return locationRepository.findAll();
     }
 
-    public Location getLocationForId(Long locationId){return locationRepository.getById(locationId);}
+    public Location getLocationForId(Long locationId){return locationRepository.findById(locationId).get();}
 }
