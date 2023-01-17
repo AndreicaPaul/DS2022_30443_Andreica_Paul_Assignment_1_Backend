@@ -1,66 +1,393 @@
-2022-11-16 08:32:38.057  INFO 1992 --- [main] c.e.f.FirstSwingAppApplication           : Starting FirstSwingAppApplication using Java 17 on LAPTOP-1Q9Q47HL with PID 1992 (D:\DS\Assignment 1\DS2022_30443_Andreica_Paul_Assignment_1_Backend\target\classes started by darius.andreica in D:\DS\Assignment 1\DS2022_30443_Andreica_Paul_Assignment_1_Backend)
-2022-11-16 08:32:38.063  INFO 1992 --- [main] c.e.f.FirstSwingAppApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-11-16 08:32:39.388  INFO 1992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-16 08:32:39.505  INFO 1992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
-2022-11-16 08:32:40.608  INFO 1992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-16 08:32:40.618  INFO 1992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-16 08:32:40.619  INFO 1992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-11-16 08:32:40.766  INFO 1992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-16 08:32:40.767  INFO 1992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2616 ms
-2022-11-16 08:32:41.095  INFO 1992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-16 08:32:41.161  INFO 1992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
-2022-11-16 08:32:41.343  INFO 1992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-16 08:32:41.464  INFO 1992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-16 08:32:41.844  INFO 1992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-16 08:32:41.911  INFO 1992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-11-16 08:32:43.144  INFO 1992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-16 08:32:43.158  INFO 1992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-16 08:32:43.814  WARN 1992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-16 08:32:44.705  INFO 1992 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-11-16 08:32:44.762  INFO 1992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-11-16 08:32:45.177  INFO 1992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-16 08:32:45.194  INFO 1992 --- [main] c.e.f.FirstSwingAppApplication           : Started FirstSwingAppApplication in 7.668 seconds (JVM running for 9.199)
-2022-11-16 08:32:45.658  INFO 1992 --- [RMI TCP Connection(1)-192.168.128.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-16 08:32:45.659  INFO 1992 --- [RMI TCP Connection(1)-192.168.128.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-16 08:32:45.660  INFO 1992 --- [RMI TCP Connection(1)-192.168.128.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-16 08:42:20.518  INFO 1992 --- [http-nio-8080-exec-2] c.e.f.security.jwt.JwtTokenService       :  PaulAdmin has successfully logged in!
-2022-11-16 08:42:20.628  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:23.067  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:23.084  INFO 1992 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:23.094  INFO 1992 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:29.124  INFO 1992 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:32.912  INFO 1992 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:39.813  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:44.342  INFO 1992 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:48.244  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:42:53.281  INFO 1992 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:44:16.293  INFO 1992 --- [http-nio-8080-exec-2] c.e.f.security.jwt.JwtTokenService       :  PaulAdmin has successfully logged in!
-2022-11-16 08:44:16.372  INFO 1992 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 08:44:51.236  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:25.285  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.security.jwt.JwtTokenService       :  PaulAdmin has successfully logged in!
-2022-11-16 09:18:25.410  INFO 1992 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:32.507  INFO 1992 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:35.904  INFO 1992 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:39.362  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:39.397  INFO 1992 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:18:57.517  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.security.service.UserServiceImpl   : Paul234 registered successfully!
-2022-11-16 09:18:57.630  INFO 1992 --- [http-nio-8080-exec-8] c.e.f.security.jwt.JwtTokenService       :  Paul234 has successfully logged in!
-2022-11-16 09:18:57.642  INFO 1992 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:19:47.705  INFO 1992 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:19:47.737  INFO 1992 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:19:47.753  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:19:59.821  INFO 1992 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:19:59.837  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:20:01.491  INFO 1992 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:20:01.523  INFO 1992 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul234 
-2022-11-16 09:20:10.459  INFO 1992 --- [http-nio-8080-exec-1] c.e.f.security.jwt.JwtTokenService       :  PaulAdmin has successfully logged in!
-2022-11-16 09:20:10.522  INFO 1992 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:12.266  INFO 1992 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:12.275  INFO 1992 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:12.295  INFO 1992 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:37.505  INFO 1992 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:42.026  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:20:46.823  INFO 1992 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
-2022-11-16 09:21:17.281  INFO 1992 --- [http-nio-8080-exec-3] c.e.f.security.jwt.JwtTokenService       :  Paul2 has successfully logged in!
-2022-11-16 09:21:17.363  INFO 1992 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
-2022-11-16 09:21:17.483  INFO 1992 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:09:29.445  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:09:29.693  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:09:30.082  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:10:36.722  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:10:37.002  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:10:38.302  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:10:59.974  INFO 12196 --- [MessageBroker-4] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 16 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(16)-CONNECTED(16)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 12, active threads = 0, queued tasks = 0, completed tasks = 189], outboundChannel[pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 46], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 2583]
+2023-01-18 00:13:14.962  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:13:15.142  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:13:15.724  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:21:36.871  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:21:37.135  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:21:37.412  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:22:59.892  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:23:16.743  INFO 12196 --- [http-nio-8080-exec-2] c.e.f.security.jwt.JwtTokenService       :  Paul4 has successfully logged in!
+2023-01-18 00:23:16.800  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:23:16.838  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:27:04.433  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.security.jwt.JwtTokenService       :  Paul4 has successfully logged in!
+2023-01-18 00:27:04.463  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:27:04.543  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:27:15.700 ERROR 12196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: User role is does not match] with root cause
+
+java.lang.IllegalArgumentException: User role is does not match
+	at com.example.first_swing_app.security.jwt.JwtTokenService.getLoginResponse(JwtTokenService.java:42) ~[classes/:na]
+	at com.example.first_swing_app.controllers.LoginController.loginRequest(LoginController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at com.example.first_swing_app.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:39) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.4.jar:2.6.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-01-18 00:27:16.771  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.security.jwt.JwtTokenService       :  PaulAdmin has successfully logged in!
+2023-01-18 00:27:16.880  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:28:03.950  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:28:06.080  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:06.141  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:06.189  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:06.842  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:06.902  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:06.964  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:07.047  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:28:07.590  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:28:33.315  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.security.jwt.JwtTokenService       :  Paul2 has successfully logged in!
+2023-01-18 00:28:33.350  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:28:33.394  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:33:59.252  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:33:59.335  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:33:59.581  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:33:59.802  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:33:59.826  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:33:59.842  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:40:59.986  INFO 12196 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 25 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(25)-CONNECTED(25)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 294], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 77], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 3051]
+2023-01-18 00:41:48.378  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:41:48.413  INFO 12196 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:41:48.587  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:41:48.598  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:41:48.897  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:41:49.258  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:42:41.814  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:42:41.823  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:42:41.854  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:42:41.968  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:42:42.989  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:42:43.144  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:43:11.358  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:43:11.453  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:44:32.943  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:44:32.963  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:44:34.438  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:44:34.739  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:44:34.974  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:44:35.266  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:46:01.220  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:46:01.242  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:46:03.127  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:46:03.285  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:46:03.620  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:46:03.662  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:46:26.137  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:46:26.157  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:46:28.047  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:46:28.112  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:46:28.347  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:46:28.452  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:48:10.287  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:48:10.292  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:48:11.786  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:48:12.037  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:48:12.428  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:48:12.562  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:49:33.578  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:49:33.599  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:49:34.778  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:49:34.936  INFO 12196 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:49:35.623  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:49:35.831  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:49:41.636  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:49:41.836  WARN 12196 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2023-01-18 00:49:41.836 ERROR 12196 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "users" violates foreign key constraint "fkijn48uxfgqxb2hqlhfpuahg7" on table "metering_devices"
+  Detail: Key (user_id)=(5) is still referenced from table "metering_devices".
+2023-01-18 00:49:41.846  INFO 12196 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-01-18 00:49:41.877 ERROR 12196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [fkijn48uxfgqxb2hqlhfpuahg7]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+
+org.postgresql.util.PSQLException: ERROR: update or delete on table "users" violates foreign key constraint "fkijn48uxfgqxb2hqlhfpuahg7" on table "metering_devices"
+  Detail: Key (user_id)=(5) is still referenced from table "metering_devices".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166) ~[postgresql-42.3.3.jar:42.3.3]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134) ~[postgresql-42.3.3.jar:42.3.3]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1402) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:493) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3285) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2420) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.2.jar:2.6.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.16.jar:5.3.16]
+	at jdk.proxy2/jdk.proxy2.$Proxy123.deleteById(Unknown Source) ~[na:na]
+	at com.example.first_swing_app.services.AdminService.deleteUser(AdminService.java:38) ~[classes/:na]
+	at com.example.first_swing_app.controllers.AdminController.deleteUser(AdminController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at com.example.first_swing_app.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:72) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.4.jar:2.6.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-01-18 00:50:46.402  INFO 12196 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:50:46.404  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:50:47.510  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:50:47.667  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:50:48.191  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:50:48.396  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:52:23.501  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:52:23.511  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:52:24.656  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:52:24.863  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:52:25.316  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:52:25.606  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:54:12.677  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:54:12.695  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:54:12.902  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:54:13.155  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:54:15.015  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:54:15.188  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:55:41.048  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:55:41.078  INFO 12196 --- [http-nio-8080-exec-2] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:55:43.407  INFO 12196 --- [http-nio-8080-exec-6] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:55:43.619  INFO 12196 --- [http-nio-8080-exec-10] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:55:43.908  INFO 12196 --- [http-nio-8080-exec-1] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:55:44.126  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:56:35.153  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:56:35.165  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:56:35.783  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:56:36.071  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:56:36.330  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:56:36.590  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:58:00.163  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:58:00.319  INFO 12196 --- [http-nio-8080-exec-5] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:58:00.637  INFO 12196 --- [http-nio-8080-exec-8] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:58:00.855  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:58:02.155  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:58:02.371  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:58:58.150  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:58:58.180  INFO 12196 --- [http-nio-8080-exec-4] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : PaulAdmin 
+2023-01-18 00:58:59.625  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:58:59.862  INFO 12196 --- [http-nio-8080-exec-7] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul4 
+2023-01-18 00:59:00.428  INFO 12196 --- [http-nio-8080-exec-9] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 00:59:00.607  INFO 12196 --- [http-nio-8080-exec-3] c.e.f.s.jwt.JwtAuthenticationFilter      : Authentication successful. Logged in username : Paul2 
+2023-01-18 01:10:59.990  INFO 12196 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 54 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(54)-CONNECTED(54)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 648], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 180], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 1, completed tasks = 3512]
+2023-01-18 01:14:13.872  INFO 12196 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2023-01-18 01:14:13.872  INFO 12196 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@16269ff4]]
+2023-01-18 01:14:13.872  INFO 12196 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2023-01-18 01:14:13.928  INFO 12196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18 01:14:13.938  INFO 12196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-18 01:14:13.943  INFO 12196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
