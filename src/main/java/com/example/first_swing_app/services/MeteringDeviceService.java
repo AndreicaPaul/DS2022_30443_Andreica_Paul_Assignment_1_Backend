@@ -15,6 +15,10 @@ public class MeteringDeviceService {
 
     private final MeteringDeviceRepository meteringDeviceRepository;
 
+    public MeteringDevice getForId(Long deviceId) {
+        return  meteringDeviceRepository.getById(deviceId);
+    }
+
     public List<MeteringDevice> getAll(){ return meteringDeviceRepository.findAll();}
 
     public List<MeteringDevice> getAllForLocation(Long locationId) {

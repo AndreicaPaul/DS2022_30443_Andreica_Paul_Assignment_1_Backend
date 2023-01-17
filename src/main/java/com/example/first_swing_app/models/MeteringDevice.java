@@ -16,7 +16,9 @@ public class MeteringDevice {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "device_id")
     private Long id;
+
     private String name;
 
     private String description;
